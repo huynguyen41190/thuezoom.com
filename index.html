@@ -1,39 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thuê Zoom Giá Rẻ - Dịch Vụ Zoom Chính Hãng</title>
-  <meta name="description" content="Thuê Zoom bản quyền giá rẻ, tạo phòng nhanh chóng, bảo hành 1 đổi 1. Dịch vụ chính hãng." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thuê Zoom Giá Rẻ • Thuê theo giờ, theo ngày • ThueZoom</title>
+  <meta name="description" content="Thuê Zoom theo giờ, theo ngày cho 100 - 1000 người. Tạo phòng nhanh, link cố định, hỗ trợ 24/7. Giá rõ ràng, thanh toán linh hoạt.">
+  <meta name="author" content="Thế Giới App - OneZoom">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
   <style>
-    body { font-family: Arial, sans-serif; background: #f7f9fb; color: #222; margin: 0; }
-    header { background: #0078d4; color: white; padding: 20px; text-align: center; }
-    section { max-width: 800px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
-    h1 { color: #0078d4; }
-    .button { background: #0078d4; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 10px; }
-    footer { text-align: center; margin-top: 40px; padding: 10px; font-size: 14px; color: #666; }
+    :root{--blue:#0078d4;--dark:#0b2545;--muted:#6b7280;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#0b2545;background:#f3f6fb}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{background:linear-gradient(90deg,var(--blue),#0066b3);color:#fff;padding:28px 0;border-radius:12px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--blue);font-weight:700}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:8px 0 0;font-size:15px;opacity:.95}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(8,15,30,0.06)}
+    .price-grid{display:flex;flex-direction:column;gap:12px}
+    .price-item{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;border:1px solid #eef2f7}
+    .price-item strong{font-size:16px}
+    .btn{background:var(--blue);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;display:inline-block}
+    .ghost{background:transparent;border:1px solid #e6eef9;color:var(--dark);padding:8px 12px;border-radius:8px;text-decoration:none}
+    .section{margin-top:26px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid #f0f4fb;text-align:left}
+    th{background:#fbfdff}
+    .badge{background:#ecf8ff;color:var(--blue);padding:6px 10px;border-radius:999px;font-weight:600}
+    footer{margin:32px 0;text-align:center;color:var(--muted);font-size:14px}
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.price-grid{flex-direction:row;flex-wrap:wrap}.price-item{flex:1 1 48%;margin-bottom:8px}}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ThueZoom",
+    "url": "https://thuezoom.com"
+  }
+  </script>
 </head>
 <body>
   <header>
-    <h1>Thuê Zoom Giá Rẻ - Dịch Vụ Zoom Chính Hãng</h1>
-    <p>Giải pháp họp trực tuyến chuyên nghiệp</p>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">TZ</div>
+        <div>
+          <h1>Thuê Zoom Giá Rẻ — Tạo phòng trong 5 phút</h1>
+          <p class="lead">Gói thuê Zoom Meeting & Webinar cho 100 - 5000 người. Thuê theo giờ, ngày hoặc tháng. Hỗ trợ kỹ thuật 24/7.</p>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>Thuê Zoom nhanh chóng</h2>
-    <p>Chúng tôi cung cấp các gói Zoom Meeting và Webinar từ 100 - 5000 người, thuê theo giờ, ngày hoặc tháng.</p>
-    <ul>
-      <li>✅ Giá rẻ nhất thị trường</li>
-      <li>✅ Tạo phòng nhanh trong 5 phút</li>
-      <li>✅ Hỗ trợ kỹ thuật 24/7</li>
-      <li>✅ Bảo hành 1 đổi 1</li>
-    </ul>
-    <a href="https://onezoom.vn/" class="button">Thuê Zoom</a>
-  </section>
+  <main class="container">
+    <div class="grid">
+      <div>
+        <section class="card">
+          <h2 style="margin-top:0">Chọn gói theo số lượng & thời gian</h2>
+          <p style="color:var(--muted);margin-top:6px">Chúng tôi tối ưu cho sự kiện, lớp học và họp hội thảo. Chọn gói phù hợp → nhận link ngay.</p>
 
-  <footer>
-    © 2025 Thuê Zoom
-  </footer>
+          <div class="section">
+            <h3 style="margin:0 0 8px">Gói thuê theo giờ — Phổ biến</h3>
+            <div class="price-grid">
+              <div class="price-item">
+                <div>
+                  <div style="font-size:13px;color:var(--muted)">Zoom 100</div>
+                  <strong>2 giờ — 9.000₫</strong>
+                  <div style="font-size:12px;color:var(--muted)">Thuê theo giờ linh hoạt</div>
+                </div>
+                <div>
+                  <a class="btn" href="https://onezoom.vn/thu-zoom-100?duration=2h">Thuê</a>
+                </div>
+              </div>
+
+              <div class="price-item">
+                <div>
+                  <div style="font-size:13px;color:var(--muted)">Zoom 100</div>
+                  <strong>3 giờ — 12.000₫</strong>
+                  <div style="font-size:12px;color:var(--muted)">Phù hợp hội thảo vừa</div>
+                </div>
+                <div>
+                  <a class="btn" href="#!">Thuê</a>
+                </div>
+              </div>
+
+              <div class="price-item">
+                <div>
+                  <div style="font-size:13px;color:var(--muted)">Zoom 500</div>
+                  <strong>4 giờ — 55.000₫</strong>
+                  <div style="font-size:12px;color:var(--muted)">Sự kiện lớn, nhiều người tham gia</div>
+                </div>
+                <div>
+                  <a class="btn" href="#!">Thuê</a>
+                </div>
+              </div>
+
+              <div class="price-item">
+                <div>
+                  <div style="font-size:13px;color:var(--muted)">Zoom 1000</div>
+                  <strong>4 giờ — 95.000₫</strong>
+                  <div style="font-size:12px;color:var(--muted)">Sự kiện quy mô lớn, webinar</div>
+                </div>
+                <div>
+                  <a class="btn" href="#!">Thuê</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 style="margin:0 0 8px">Gói thuê theo ngày / tùy chọn</h3>
+            <table>
+              <thead>
+                <tr><th>Gói</th><th>Thời gian</th><th>Giá</th><th></th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Zoom 100</td>
+                  <td>1 ngày</td>
+                  <td>22.000₫</td>
+                  <td><a class="ghost" href="https://onezoom.vn/thu-zoom-100?duration=1d">Chọn</a></td>
+                </tr>
+                <tr>
+                  <td>Zoom 300</td>
+                  <td>1 ngày</td>
+                  <td>106.000₫</td>
+                  <td><a class="ghost" href="https://onezoom.vn/thu-zoom-300?duration=1d">Chọn</a></td>
+                </tr>
+                <tr>
+                  <td>Zoom 500</td>
+                  <td>1 ngày</td>
+                  <td>296.000₫</td>
+                  <td><a class="ghost" href="https://onezoom.vn/thu-zoom-500?duration=1d">Chọn</a></td>
+                </tr>
+                <tr>
+                  <td>Zoom 1000</td>
+                  <td>1 ngày</td>
+                  <td>396.000₫</td>
+                  <td><a class="ghost" href="https://onezoom.vn/thu-zoom-1000?duration=1d">Chọn</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin-top:10px;color:var(--muted);font-size:13px">Ghi chú: Giá tham khảo. Vui lòng kiểm tra trang đặt hàng để biết giá và tuỳ chọn chính xác.</p>
+          </div>
+
+          <div class="section" style="display:flex;gap:10px;align-items:center">
+            <a class="btn" href="https://onezoom.vn/lien-he">Liên hệ & đặt thuê</a>
+            <a class="ghost" href="https://thegioiapp.vn/zoom-ban-quyen">Mua bản quyền (muazoom.vn)</a>
+          </div>
+        </section>
+
+        <section class="card section">
+          <h3>Vì sao chọn chúng tôi?</h3>
+          <ul style="color:var(--muted)">
+            <li>Hỗ trợ kỹ thuật 24/7, phản hồi nhanh qua Zalo/Hotline.</li>
+            <li>Link cố định & tạo phòng tự động sau thanh toán.</li>
+            <li>Hỗ trợ hóa đơn VAT cho doanh nghiệp.</li>
+            <li>Bảo hành 1 đổi 1 nếu sự cố kỹ thuật.</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h3>Câu hỏi thường gặp (FAQ)</h3>
+          <details style="margin-bottom:8px"><summary>Phải có tài khoản Zoom không?</summary><div style="padding:10px;color:var(--muted)">Không cần. Chúng tôi cung cấp link phòng và quản lý tài khoản.</div></details>
+          <details style="margin-bottom:8px"><summary>Thanh toán bằng cách nào?</summary><div style="padding:10px;color:var(--muted)">Chuyển khoản, Momo, ZaloPay. Hướng dẫn trên trang đặt hàng.</div></details>
+          <details style="margin-bottom:8px"><summary>Có thể nâng cấp gói trong lúc dùng không?</summary><div style="padding:10px;color:var(--muted)">Có, liên hệ support để nâng cấp tức thời.</div></details>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div class="badge">Ưu đãi</div>
+              <h3 style="margin:8px 0">Giảm 10% lần đầu</h3>
+              <p style="color:var(--muted);margin:0">Dành cho khách thuê lần đầu. Nhập mã <strong>ZOOM10</strong> khi đặt.</p>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:12px;color:var(--muted)">Hotline</div>
+              <div style="font-weight:700">0799 599 666</div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px;display:flex;gap:8px">
+            <a class="btn" href="https://zalo.me/your_zalo_oa_link">Chat Zalo</a>
+            <a class="ghost" href="tel:0799599666">Gọi ngay</a>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h4 style="margin:0 0 8px">Đánh giá khách hàng</h4>
+          <p style="margin:0;color:var(--muted)">"Dễ dùng, ổn định, hỗ trợ nhanh." — Trung tâm Ánh Dương</p>
+        </div>
+
+        <div class="card section">
+          <h4 style="margin:0 0 8px">Đăng ký nhận tin</h4>
+          <form action="https://onezoom.vn/subscribe" method="post">
+            <input name="email" type="email" placeholder="Email của bạn" style="width:100%;padding:10px;border-radius:8px;border:1px solid #eef4fb;margin-bottom:8px">
+            <button class="btn" type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </aside>
+
+    </div>
+
+    <footer>
+      © 2025 ThueZoom<br>
+      <small style="color:var(--muted)">Website này là trang giới thiệu dịch vụ thuê Zoom. Mọi thông tin có thể thay đổi theo chính sách.</small>
+    </footer>
+  </main>
 </body>
 </html>
