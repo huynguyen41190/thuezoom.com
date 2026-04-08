@@ -11,53 +11,283 @@
   
 
   <style>
-    :root{
-      --blue:#0078d4;
-      --dark:#0b2545;
-      --muted:#6b7280;
-      --bg:#f3f6fb;
-    }
-    body{margin:0;font-family:system-ui;background:var(--bg);color:var(--dark)}
-    .container{max-width:1100px;margin:auto;padding:24px}
-    .card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
-    h1,h2,h3{margin:0 0 10px}
-    .btn{background:var(--blue);color:#fff;padding:12px 16px;border-radius:8px;text-decoration:none;display:inline-block}
-    .ghost{border:1px solid #ddd;padding:10px 14px;border-radius:8px;text-decoration:none;color:var(--dark)}
-    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px}
-    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+:root{
+  --blue:#0078d4;
+  --blue-dark:#0060aa;
+  --dark:#0b2545;
+  --muted:#6b7280;
+  --bg:#f3f6fb;
+}
 
-    header{
-      background:linear-gradient(90deg,#0078d4,#0060aa);
-      color:#fff;
-      padding:40px 0;
-      border-radius:12px;
-    }
+/* RESET */
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  background:var(--bg);
+  color:var(--dark);
+}
 
-    .hero h1{font-size:30px}
-    .hero p{opacity:.95;margin-top:10px}
+/* LAYOUT */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:24px;
+}
 
-    .price-item{
-      display:flex;justify-content:space-between;
-      padding:12px;border:1px solid #eee;border-radius:10px;margin-bottom:10px
-    }
+.grid{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:20px;
+}
 
-    ul{padding-left:18px}
-    li{margin-bottom:6px}
+/* CARD */
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
 
-    footer{text-align:center;color:var(--muted);margin:30px 0}
-  </style>
+/* TEXT */
+h1,h2,h3{
+  margin:0 0 10px;
+}
+
+ul{
+  padding-left:18px;
+}
+li{
+  margin-bottom:6px;
+}
+
+/* BUTTON */
+.btn{
+  background:var(--blue);
+  color:#fff;
+  padding:12px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  display:inline-block;
+  font-weight:600;
+  transition:.2s;
+}
+
+.btn:hover{
+  background:var(--blue-dark);
+}
+
+.ghost{
+  border:1px solid #ddd;
+  padding:10px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  color:var(--dark);
+}
+
+/* HERO */
+header{
+  background:linear-gradient(90deg,var(--blue),var(--blue-dark));
+  color:#fff;
+  padding:40px 0;
+  border-radius:12px;
+}
+
+.hero h1{
+  font-size:30px;
+}
+.hero p{
+  opacity:.95;
+  margin-top:10px;
+}
+
+/* PRICE */
+.price-item{
+  display:flex;
+  justify-content:space-between;
+  padding:12px;
+  border:1px solid #eee;
+  border-radius:10px;
+  margin-bottom:10px;
+  transition:.2s;
+}
+
+.price-item:hover{
+  border-color:var(--blue);
+  transform:translateY(-2px);
+}
+
+/* NAVBAR PRO */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:700;
+}
+
+.logo img{
+  height:40px;
+}
+
+/* MENU */
+.nav-menu{
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+
+.nav-menu a{
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:500;
+  transition:.2s;
+}
+
+.nav-menu a:hover{
+  color:var(--blue);
+}
+
+/* CTA */
+.cta{
+  background:var(--blue);
+  color:#fff !important;
+  padding:10px 14px;
+  border-radius:8px;
+  font-weight:600;
+}
+
+.cta:hover{
+  background:var(--blue-dark);
+}
+
+/* MOBILE MENU */
+.menu-toggle{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  color:var(--muted);
+  margin:30px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-menu{
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#fff;
+    flex-direction:column;
+    width:220px;
+    padding:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    display:none;
+  }
+
+  .nav-menu.show{
+    display:flex;
+  }
+
+  .hero h1{
+    font-size:24px;
+  }
+
+}
+
+/* FLOATING CTA */
+.floating{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:999;
+}
+
+.floating a{
+  background:var(--blue);
+  color:#fff;
+  padding:12px 14px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* STICKY MOBILE CTA */
+@media(max-width:768px){
+  .sticky-cta{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:var(--blue);
+    color:#fff;
+    text-align:center;
+    padding:14px;
+    font-weight:700;
+    z-index:999;
+  }
+}
+</style>
+  
 </head>
 
 <body>
+<!-- NAVBAR PRO -->
+<header class="navbar">
+  <div class="container nav-inner">
 
-<header>
-  <div class="container hero">
-    <h1>Thuê Zoom Giá Rẻ — Có phòng ngay trong 2 phút</h1>
-    <p>Tổ chức họp, đào tạo, webinar từ 100–1000+ người. Không cần tài khoản — nhận link ngay.</p>
-    <div style="margin-top:15px">
-      <a class="btn" href="https://onezoom.vn/thue-phong">Thuê ngay</a>
-      <a class="ghost" href="#banggia">Xem bảng giá</a>
+    <!-- LOGO -->
+    <a href="/" class="logo">
+      <img src="./assets/logo.png">
+      <span>ThueZoom</span>
+    </a>
+
+    <!-- MENU -->
+    <nav class="nav-menu" id="menu">
+      <a href="#banggia">Bảng giá</a>
+      <a href="#faq">FAQ</a>
+      <a href="#lienhe">Liên hệ</a>
+      <a href="https://onezoom.vn/thue-phong" class="cta">Thuê ngay</a>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
     </div>
+
   </div>
 </header>
 
