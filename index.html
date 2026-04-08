@@ -4,8 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Thuê Zoom Giá Rẻ – Có phòng ngay trong 2 phút</title>
-<meta name="description" content="Thuê Zoom theo giờ, ngày cho 100–1000 người. Có link ngay sau thanh toán. Hỗ trợ 24/7.">
+<title>Thuê Zoom 100 300 500 1000 người giá rẻ – Có phòng ngay</title>
+<meta name="description" content="Thuê Zoom theo giờ, ngày. Có phòng ngay sau 2 phút. Hỗ trợ 24/7. Giá rẻ.">
+
+<!-- SEO OG -->
+<meta property="og:title" content="Thuê Zoom Giá Rẻ">
+<meta property="og:description" content="Có phòng ngay sau 2 phút">
+<meta property="og:image" content="./assets/banner.jpg">
 
 <link rel="icon" href="./assets/favicon.ico">
 
@@ -20,9 +25,10 @@ html{scroll-behavior:smooth;}
 
 body{
   margin:0;
-  font-family:system-ui;
+  font-family:system-ui,-apple-system;
   background:var(--bg);
   color:var(--dark);
+  font-size:16px;
 }
 
 .container{
@@ -38,8 +44,10 @@ body{
   margin-top:20px;
 }
 
+section{scroll-margin-top:80px;}
+
 /* NAVBAR */
-.navbar{
+header.navbar{
   position:sticky;
   top:0;
   background:#fff;
@@ -59,16 +67,17 @@ body{
   gap:10px;
   font-weight:700;
   text-decoration:none;
+  color:#000;
 }
 
 .logo img{height:40px;}
 
-.nav-menu{
+nav{
   display:flex;
   gap:20px;
 }
 
-.nav-menu a{
+nav a{
   text-decoration:none;
   color:#000;
 }
@@ -90,7 +99,7 @@ body{
 @media(max-width:768px){
   .menu-toggle{display:block;}
 
-  .nav-menu{
+  nav{
     display:none;
     position:fixed;
     top:60px;
@@ -103,7 +112,7 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
   }
 
-  .nav-menu.show{display:flex;}
+  nav.show{display:flex;}
 }
 
 /* HERO */
@@ -120,7 +129,6 @@ body{
   border-radius:8px;
   text-decoration:none;
   display:inline-block;
-  margin-top:10px;
 }
 
 /* PRICE */
@@ -151,6 +159,16 @@ body{
   text-decoration:none;
 }
 </style>
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "ThueZoom"
+}
+</script>
+
 </head>
 
 <body>
@@ -158,12 +176,13 @@ body{
 <!-- NAVBAR -->
 <header class="navbar">
   <div class="container nav-inner">
+
     <a href="/" class="logo">
-      <img src="./assets/logo.png" alt="Thuê Zoom giá rẻ ThueZoom">
-      ThueZoom.com
+      <img src="./assets/logo.png" alt="ThueZoom - Thuê Zoom giá rẻ" loading="lazy">
+      ThueZoom
     </a>
 
-    <nav class="nav-menu" id="menu">
+    <nav id="menu">
       <a href="#banggia">Bảng giá</a>
       <a href="#faq">FAQ</a>
       <a href="#danhgia">Đánh giá</a>
@@ -172,57 +191,82 @@ body{
     </nav>
 
     <div class="menu-toggle" id="toggle">☰</div>
+
   </div>
 </header>
+
+<!-- MAIN -->
+<main>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <h1>Thuê Zoom Giá Rẻ — Có phòng ngay trong 2 phút</h1>
-    <p>Không cần tài khoản — nhận link ngay sau thanh toán</p>
-    <a class="btn" href="https://onezoom.vn/thue-phong">Thuê ngay</a>
+    <h1>Thuê Zoom 100 300 500 1000 người giá rẻ – Có phòng ngay</h1>
+    <p>Không cần tài khoản – nhận link trong 2 phút</p>
+    <a class="btn" href="https://onezoom.vn/thue-phong">Thuê ngay – có phòng sau 2 phút</a>
   </div>
 </section>
 
 <div class="container">
 
+<!-- TRUST -->
+<section class="card">
+  Đã phục vụ hơn <b>1.000+ khách hàng</b>  
+  <br>⚡ Có phòng ngay – hỗ trợ 24/7 – có hóa đơn
+</section>
+
 <!-- BẢNG GIÁ -->
-<div class="card" id="banggia">
+<section class="card" id="banggia">
   <h2>Bảng giá</h2>
+
+  <p style="color:red;font-weight:600">
+    Giá có thể thay đổi – nên đặt sớm để giữ giá tốt
+  </p>
 
   <div class="price-item"><span>Zoom 100 - 2 giờ</span><span>9.000₫</span></div>
   <div class="price-item"><span>Zoom 100 - 1 ngày</span><span>22.000₫</span></div>
   <div class="price-item"><span>Zoom 300 - 1 ngày</span><span>106.000₫</span></div>
   <div class="price-item"><span>Zoom 500 - 1 ngày</span><span>296.000₫</span></div>
-  <div class="price-item"><span>Zoom 1000 - 1 ngày</span><span>396.000₫</span></div>
-</div>
+</section>
+
+<!-- CTA -->
+<section class="card" style="text-align:center">
+  <h3>Cần phòng Zoom ngay?</h3>
+  <a class="btn" href="https://onezoom.vn/thue-phong">🚀 Thuê ngay</a>
+</section>
 
 <!-- FAQ -->
-<div class="card" id="faq">
+<section class="card" id="faq">
   <h2>Câu hỏi thường gặp</h2>
-
-  <p><b>1. Có cần tài khoản Zoom không?</b><br>Không cần, bạn nhận link và dùng ngay.</p>
-  <p><b>2. Sau khi thanh toán bao lâu có phòng?</b><br>Chỉ 1–2 phút là có ngay.</p>
-  <p><b>3. Có hỗ trợ khi đang họp không?</b><br>Có, kỹ thuật hỗ trợ 24/7.</p>
-  <p><b>4. Có xuất hóa đơn VAT không?</b><br>Có đầy đủ cho doanh nghiệp.</p>
-  <p><b>5. Có nâng cấp gói giữa chừng được không?</b><br>Có thể nâng cấp ngay lập tức.</p>
-</div>
+  <p><b>Có cần tài khoản?</b> Không cần</p>
+  <p><b>Bao lâu có phòng?</b> 1–2 phút</p>
+  <p><b>Có hỗ trợ?</b> 24/7</p>
+  <p><b>Có hóa đơn?</b> Có</p>
+  <p><b>Có nâng cấp?</b> Có ngay</p>
+</section>
 
 <!-- ĐÁNH GIÁ -->
-<div class="card" id="danhgia">
-  <h2>Đánh giá khách hàng</h2>
-
-  <p>⭐️⭐️⭐️⭐️⭐️ "Dễ dùng, hỗ trợ nhanh" — Trung tâm đào tạo</p>
-  <p>⭐️⭐️⭐️⭐️⭐️ "Giá rẻ, ổn định" — Doanh nghiệp SME</p>
-  <p>⭐️⭐️⭐️⭐️⭐️ "Có phòng ngay, rất tiện" — Giảng viên online</p>
-</div>
+<section class="card" id="danhgia">
+  <h2>Đánh giá</h2>
+  <p>⭐️⭐️⭐️⭐️⭐️ "Dễ dùng, hỗ trợ nhanh"</p>
+  <p>⭐️⭐️⭐️⭐️⭐️ "Giá tốt, ổn định"</p>
+  <p>⭐️⭐️⭐️⭐️⭐️ "Có phòng ngay"</p>
+</section>
 
 <!-- LIÊN HỆ -->
-<div class="card" id="lienhe">
-  <h2>Liên hệ ngay</h2>
-</div>
+<section class="card" id="lienhe">
+</section>
 
 </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    © 2026 ThueZoom
+  </div>
+</footer>
 
 <!-- FLOATING -->
 <div class="floating">
