@@ -1,144 +1,57 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Thuê Zoom Giá Rẻ – Có phòng ngay trong 2 phút</title>
-  <meta name="description" content="Thuê Zoom theo giờ, ngày cho 100–1000+ người. Có link ngay sau thanh toán. Hỗ trợ 24/7. Giá rẻ, linh hoạt.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- Favicon -->
-  <link rel="icon" href="./assets/favicon.ico">
-  
+<title>Thuê Zoom Giá Rẻ – Có phòng ngay</title>
+<meta name="description" content="Thuê Zoom theo giờ, ngày. Có phòng ngay sau thanh toán. Hỗ trợ 24/7.">
 
-  <style>
+<link rel="icon" href="./assets/favicon.ico">
+
+<style>
 :root{
   --blue:#0078d4;
-  --blue-dark:#0060aa;
   --dark:#0b2545;
   --muted:#6b7280;
   --bg:#f3f6fb;
 }
 
-/* RESET */
 body{
   margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  font-family:system-ui;
   background:var(--bg);
   color:var(--dark);
 }
 
-/* LAYOUT */
 .container{
   max-width:1100px;
   margin:auto;
-  padding:24px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:1fr 360px;
-  gap:20px;
-}
-
-/* CARD */
-.card{
-  background:#fff;
   padding:20px;
-  border-radius:12px;
-  box-shadow:0 6px 20px rgba(0,0,0,.05);
 }
 
-/* TEXT */
-h1,h2,h3{
-  margin:0 0 10px;
-}
-
-ul{
-  padding-left:18px;
-}
-li{
-  margin-bottom:6px;
-}
-
-/* BUTTON */
-.btn{
-  background:var(--blue);
-  color:#fff;
-  padding:12px 16px;
-  border-radius:8px;
-  text-decoration:none;
-  display:inline-block;
-  font-weight:600;
-  transition:.2s;
-}
-
-.btn:hover{
-  background:var(--blue-dark);
-}
-
-.ghost{
-  border:1px solid #ddd;
-  padding:10px 14px;
-  border-radius:8px;
-  text-decoration:none;
-  color:var(--dark);
-}
-
-/* HERO */
-header{
-  background:linear-gradient(90deg,var(--blue),var(--blue-dark));
-  color:#fff;
-  padding:40px 0;
-  border-radius:12px;
-}
-
-.hero h1{
-  font-size:30px;
-}
-.hero p{
-  opacity:.95;
-  margin-top:10px;
-}
-
-/* PRICE */
-.price-item{
-  display:flex;
-  justify-content:space-between;
-  padding:12px;
-  border:1px solid #eee;
-  border-radius:10px;
-  margin-bottom:10px;
-  transition:.2s;
-}
-
-.price-item:hover{
-  border-color:var(--blue);
-  transform:translateY(-2px);
-}
-
-/* NAVBAR PRO */
+/* NAVBAR */
 .navbar{
   position:sticky;
   top:0;
-  z-index:1000;
   background:#fff;
+  z-index:1000;
   box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .nav-inner{
   display:flex;
-  align-items:center;
   justify-content:space-between;
+  align-items:center;
 }
 
-/* LOGO */
 .logo{
   display:flex;
   align-items:center;
   gap:10px;
-  text-decoration:none;
-  color:var(--dark);
   font-weight:700;
+  text-decoration:none;
+  color:#000;
 }
 
 .logo img{
@@ -148,53 +61,27 @@ header{
 /* MENU */
 .nav-menu{
   display:flex;
-  gap:24px;
+  gap:20px;
   align-items:center;
 }
 
 .nav-menu a{
   text-decoration:none;
-  color:var(--dark);
-  font-weight:500;
-  transition:.2s;
+  color:#000;
 }
 
-.nav-menu a:hover{
-  color:var(--blue);
-}
-
-/* CTA */
 .cta{
   background:var(--blue);
   color:#fff !important;
   padding:10px 14px;
   border-radius:8px;
-  font-weight:600;
 }
 
-.cta:hover{
-  background:var(--blue-dark);
-}
-
-/* MOBILE MENU */
+/* MOBILE */
 .menu-toggle{
   display:none;
-  font-size:24px;
+  font-size:26px;
   cursor:pointer;
-}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  color:var(--muted);
-  margin:30px 0;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .grid{
-    grid-template-columns:1fr;
-  }
 }
 
 @media(max-width:768px){
@@ -204,84 +91,91 @@ footer{
   }
 
   .nav-menu{
+    display:none;
     position:absolute;
     top:60px;
     right:0;
     background:#fff;
     flex-direction:column;
-    width:220px;
+    width:200px;
     padding:15px;
     box-shadow:0 10px 20px rgba(0,0,0,0.1);
-    display:none;
   }
 
   .nav-menu.show{
     display:flex;
   }
-
-  .hero h1{
-    font-size:24px;
-  }
-
 }
 
-/* FLOATING CTA */
+/* HERO */
+header{
+  background:linear-gradient(90deg,#0078d4,#0060aa);
+  color:#fff;
+  padding:40px 0;
+}
+
+.hero h1{
+  font-size:28px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  margin-top:20px;
+}
+
+/* PRICE */
+.price-item{
+  display:flex;
+  justify-content:space-between;
+  padding:12px;
+  border:1px solid #eee;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn{
+  background:#0078d4;
+  color:#fff;
+  padding:12px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  display:inline-block;
+}
+
+/* FLOATING */
 .floating{
   position:fixed;
   bottom:20px;
   right:20px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  z-index:999;
 }
 
 .floating a{
-  background:var(--blue);
+  display:block;
+  margin-top:10px;
+  background:#0078d4;
   color:#fff;
-  padding:12px 14px;
+  padding:12px;
   border-radius:50px;
   text-decoration:none;
-  font-weight:600;
-}
-
-/* STICKY MOBILE CTA */
-@media(max-width:768px){
-  .sticky-cta{
-    position:fixed;
-    bottom:0;
-    left:0;
-    right:0;
-    background:var(--blue);
-    color:#fff;
-    text-align:center;
-    padding:14px;
-    font-weight:700;
-    z-index:999;
-  }
 }
 </style>
-  
 </head>
-  
-<script>
-function toggleMenu(){
-  document.getElementById("menu").classList.toggle("show");
-}
-</script>
-  
+
 <body>
-<!-- NAVBAR PRO -->
+
+<!-- NAVBAR -->
 <header class="navbar">
   <div class="container nav-inner">
 
-    <!-- LOGO -->
     <a href="/" class="logo">
       <img src="./assets/logo.png">
-      <span>ThueZoom</span>
+      ThueZoom
     </a>
 
-    <!-- MENU -->
     <nav class="nav-menu" id="menu">
       <a href="#banggia">Bảng giá</a>
       <a href="#faq">FAQ</a>
@@ -289,137 +183,75 @@ function toggleMenu(){
       <a href="https://onezoom.vn/thue-phong" class="cta">Thuê ngay</a>
     </nav>
 
-    <!-- HAMBURGER -->
-    <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="menu-toggle" id="toggle">
       ☰
     </div>
 
   </div>
 </header>
 
-<main class="container">
-  <div class="grid">
+<!-- HERO -->
+<header>
+  <div class="container hero">
+    <h1>Thuê Zoom Giá Rẻ — Có phòng ngay trong 2 phút</h1>
+    <p>Không cần tài khoản — nhận link ngay sau thanh toán</p>
+    <a class="btn" href="https://onezoom.vn/thue-phong">Thuê ngay</a>
+  </div>
+</header>
 
-    <!-- LEFT -->
-    <div>
+<!-- CONTENT -->
+<div class="container">
 
-      <!-- WHY -->
-      <section class="card">
-        <h2>Tại sao khách chọn dịch vụ này?</h2>
-        <ul>
-          <li>Có phòng ngay sau thanh toán</li>
-          <li>Link cố định — dùng nhiều lần</li>
-          <li>Có kỹ thuật hỗ trợ khi đang họp</li>
-          <li>Xuất hóa đơn VAT đầy đủ</li>
-          <li>Lỗi đổi ngay — không chờ đợi</li>
-        </ul>
-      </section>
+  <div class="card" id="banggia">
+    <h2>Bảng giá</h2>
 
-      <!-- PRICE -->
-      <section class="card" id="banggia" style="margin-top:20px">
-        <h2>Bảng giá thuê Zoom</h2>
-        <p style="color:var(--muted)">💡 Chỉ từ 9.000đ đã có thể mở phòng Zoom 100 người</p>
-
-        <div class="price-item">
-          <div>
-            <strong>Zoom 100 — 2 giờ</strong><br>
-            <small>Phù hợp họp nhanh</small>
-          </div>
-          <div>9.000₫</div>
-        </div>
-
-        <div class="price-item">
-          <div>
-            <strong>Zoom 100 — 1 ngày</strong><br>
-            <small>Học / đào tạo</small>
-          </div>
-          <div>22.000₫</div>
-        </div>
-
-        <div class="price-item">
-          <div>
-            <strong>Zoom 300 — 1 ngày</strong>
-          </div>
-          <div>106.000₫</div>
-        </div>
-
-        <div class="price-item">
-          <div>
-            <strong>Zoom 500 — 1 ngày</strong>
-          </div>
-          <div>296.000₫</div>
-        </div>
-
-        <div class="price-item">
-          <div>
-            <strong>Zoom 1000 — 1 ngày</strong>
-          </div>
-          <div>396.000₫</div>
-        </div>
-
-        <a class="btn" style="margin-top:10px" href="https://onezoom.vn/thue-phong">Thuê ngay</a>
-      </section>
-
-      <!-- USE CASE -->
-      <section class="card" style="margin-top:20px">
-        <h2>Phù hợp với ai?</h2>
-        <ul>
-          <li>🎓 Trung tâm đào tạo online</li>
-          <li>🏫 Trường học</li>
-          <li>🧑‍💼 Doanh nghiệp họp nội bộ</li>
-          <li>📢 Webinar / hội thảo</li>
-        </ul>
-      </section>
-
-      <!-- FAQ -->
-      <section class="card" style="margin-top:20px">
-        <h2>Câu hỏi thường gặp</h2>
-
-        <p><strong>Có cần tài khoản Zoom không?</strong><br>
-        Không cần. Bạn nhận link và dùng ngay.</p>
-
-        <p><strong>Có hỗ trợ khi đang họp không?</strong><br>
-        Có. Kỹ thuật luôn sẵn sàng.</p>
-
-        <p><strong>Có nâng cấp giữa chừng được không?</strong><br>
-        Có thể nâng cấp ngay trong vài phút.</p>
-      </section>
-
-      <!-- CTA -->
-      <section class="card" style="margin-top:20px;text-align:center">
-        <h2>Cần phòng Zoom ngay hôm nay?</h2>
-        <p>Nhận link trong vài phút — kể cả khi bạn chưa từng dùng Zoom</p>
-        <a class="btn" href="https://onezoom.vn/thue-phong">Thuê ngay</a>
-      </section>
-
+    <div class="price-item">
+      <div>Zoom 100 - 2 giờ</div>
+      <div>9.000₫</div>
     </div>
 
-    <!-- RIGHT -->
-    <aside>
-      <div class="card">
-        <h3>🎁 Ưu đãi</h3>
-        <p>Giảm 5% cho khách lần đầu</p>
-        <p><strong>Mã: 777777</strong></p>
+    <div class="price-item">
+      <div>Zoom 100 - 1 ngày</div>
+      <div>22.000₫</div>
+    </div>
 
-        <p><strong>Hotline</strong><br>0799 599 666</p>
-
-        <a class="btn" href="https://zalo.me/your_zalo_oa_link">Chat Zalo</a>
-      </div>
-
-      <div class="card" style="margin-top:20px">
-        <h4>Đánh giá</h4>
-        <p>"Dễ dùng, hỗ trợ nhanh" — Khách hàng</p>
-      </div>
-    </aside>
+    <div class="price-item">
+      <div>Zoom 300 - 1 ngày</div>
+      <div>106.000₫</div>
+    </div>
 
   </div>
 
-  <footer>
-    © 2026 ThueZoom<br>
-    <small>Trang giới thiệu dịch vụ thuê Zoom</small>
-  </footer>
+  <div class="card" id="faq">
+    <h2>FAQ</h2>
+    <p><b>Có cần tài khoản?</b> Không cần</p>
+    <p><b>Có hỗ trợ?</b> Có 24/7</p>
+  </div>
 
-</main>
+  <div class="card" id="lienhe">
+    <h2>Liên hệ</h2>
+    <p>Hotline: 0799 599 666</p>
+  </div>
+
+</div>
+
+<!-- FLOATING -->
+<div class="floating">
+  <a href="https://zalo.me/">Chat Zalo</a>
+  <a href="https://onezoom.vn/thue-phong">Thuê ngay</a>
+</div>
+
+<!-- JS FIX MENU -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const toggle = document.getElementById("toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", function(){
+    menu.classList.toggle("show");
+  });
+});
+</script>
 
 </body>
 </html>
