@@ -3,250 +3,483 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thuê Zoom giá rẻ theo giờ, theo ngày – 100 đến 1000 người | ThueZoom.com</title>
+<meta name="description" content="Thuê Zoom từ 12.000₫/2 giờ. Phòng họp Zoom 100, 300, 500, 1000 người theo giờ hoặc theo ngày, không cần tài khoản, nhận link ngay sau thanh toán. Có hóa đơn VAT, hỗ trợ 24/7.">
+<link rel="canonical" href="https://thuezoom.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1E7FE6">
 
-<title>Thuê Zoom OneRoom – Có phòng ngay trong 1 phút</title>
-<meta name="description" content="Thuê Zoom theo giờ, ngày cho 100– 500 người. Có link ngay sau thanh toán.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:site_name" content="ThueZoom.com">
+<meta property="og:url" content="https://thuezoom.com/">
+<meta property="og:title" content="Thuê Zoom theo giờ, theo ngày – có link họp sau 1 phút">
+<meta property="og:description" content="Phòng Zoom 100–1000 người, từ 12.000₫. Không cần tài khoản, có hóa đơn VAT, hỗ trợ 24/7.">
+<meta property="og:image" content="https://thuezoom.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="./assets/favicon.ico">
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://thuezoom.com/#org",
+      "name": "ThueZoom.com",
+      "url": "https://thuezoom.com/",
+      "logo": "https://thuezoom.com/assets/logo.png",
+      "sameAs": ["https://zalo.me/onezoom"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thuezoom.com/#website",
+      "url": "https://thuezoom.com/",
+      "name": "ThueZoom.com",
+      "inLanguage": "vi",
+      "publisher": {"@id": "https://thuezoom.com/#org"}
+    },
+    {
+      "@type": "Service",
+      "name": "Thuê phòng họp Zoom theo giờ, theo ngày",
+      "serviceType": "Cho thuê phòng họp Zoom",
+      "provider": {"@id": "https://thuezoom.com/#org"},
+      "areaServed": {"@type": "Country", "name": "Việt Nam"},
+      "offers": [
+        {"@type": "Offer", "name": "Zoom 100 người – 2 giờ", "price": "12000", "priceCurrency": "VND", "url": "https://app.onezoom.vn/create"},
+        {"@type": "Offer", "name": "Zoom 100 người – 1 ngày", "price": "39000", "priceCurrency": "VND", "url": "https://app.onezoom.vn/create"},
+        {"@type": "Offer", "name": "Zoom 300 người – 1 ngày", "price": "139000", "priceCurrency": "VND", "url": "https://app.onezoom.vn/create"},
+        {"@type": "Offer", "name": "Zoom 500 người – 1 ngày", "price": "320000", "priceCurrency": "VND", "url": "https://app.onezoom.vn/create"},
+        {"@type": "Offer", "name": "Zoom 1000 người – 1 ngày", "price": "439000", "priceCurrency": "VND", "url": "https://app.onezoom.vn/create"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Thuê Zoom có cần tài khoản Zoom không?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Không cần. Sau khi thanh toán bạn nhận link phòng họp, ID và mật khẩu để dùng ngay."}},
+        {"@type": "Question", "name": "Sau khi thanh toán bao lâu thì có phòng?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Hệ thống tạo phòng tự động qua API của Zoom, thường có link trong khoảng 1 phút sau khi thanh toán."}},
+        {"@type": "Question", "name": "Có hỗ trợ khi đang họp không?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Có. Đội kỹ thuật hỗ trợ 24/7 qua Zalo, kể cả trong lúc buổi họp đang diễn ra."}},
+        {"@type": "Question", "name": "Thuê Zoom có xuất hóa đơn VAT không?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Có. Giá niêm yết đã gồm VAT và có xuất hóa đơn đầy đủ cho doanh nghiệp."}},
+        {"@type": "Question", "name": "Có nâng cấp gói giữa chừng được không?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Được. Khi số người tham gia tăng, bạn có thể nâng lên gói lớn hơn ngay lập tức."}},
+        {"@type": "Question", "name": "Nên thuê Zoom bao nhiêu người?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Chọn gói lớn hơn số người dự kiến một chút: lớp học, họp nhóm dùng Zoom 100; đào tạo, hội thảo dùng Zoom 300; webinar dùng Zoom 500; đại hội, hội nghị lớn dùng Zoom 1000."}}
+      ]
+    }
+  ]
+}
+</script>
 
 <style>
 :root{
-  --blue:#0078d4;
-  --dark:#0b2545;
-  --bg:#f3f6fb;
+  --ink:#13233A;
+  --ink-soft:#4A5A72;
+  --paper:#F5F7FA;
+  --white:#FFFFFF;
+  --brand:#1E7FE6;
+  --brand-deep:#0F5FC0;
+  --ok:#0E9F6E;
+  --line:#DCE3EC;
+  --radius-lg:20px;
+  --radius-sm:10px;
+  --wrap:1120px;
 }
-
-html{scroll-behavior:smooth;}
-
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
   margin:0;
-  font-family:system-ui;
-  background:var(--bg);
-  color:var(--dark);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);
 }
+img{max-width:100%;display:block}
+a{color:var(--brand-deep)}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;background:#fff;padding:8px 12px;z-index:100}
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-
-.card{
-  background:#fff;
-  padding:20px;
-  border-radius:12px;
-  margin-top:20px;
-}
-
-/* NAVBAR */
-.navbar{
-  position:sticky;
-  top:0;
-  background:#fff;
-  z-index:1000;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
-}
-
-.nav-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:700;
-  text-decoration:none;
-}
-
-.logo img{height:40px;}
-
-.nav-menu{
-  display:flex;
-  gap:20px;
-}
-
-.nav-menu a{
-  text-decoration:none;
-  color:#000;
-}
-
-.cta{
-  background:var(--blue);
-  color:#fff !important;
-  padding:10px 14px;
-  border-radius:8px;
-}
-
-/* MOBILE */
-.menu-toggle{
-  display:none;
-  font-size:26px;
-  cursor:pointer;
-}
-
-@media(max-width:768px){
-  .menu-toggle{display:block;}
-
-  .nav-menu{
-    display:none;
-    position:fixed;
-    top:60px;
-    right:10px;
-    background:#fff;
-    flex-direction:column;
-    width:220px;
-    padding:15px;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-  }
-
-  .nav-menu.show{display:flex;}
-}
-
-/* HERO */
-.hero{
-  background:linear-gradient(90deg,#0078d4,#0060aa);
-  color:#fff;
-  padding:40px 0;
-}
-
+/* Buttons: one primary action everywhere ("Thuê ngay"), Zalo is secondary */
 .btn{
-  background:#0078d4;
-  color:#fff;
-  padding:12px 16px;
-  border-radius:8px;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:10px;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font:inherit;font-weight:600;font-size:16px;line-height:1;
+  padding:15px 22px;border-radius:12px;text-decoration:none;cursor:pointer;
+  border:2px solid transparent;white-space:nowrap;
 }
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-deep)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink-soft)}
+.btn-small{padding:10px 16px;font-size:15px}
 
-/* PRICE */
-.price-item{
-  display:flex;
-  justify-content:space-between;
-  padding:12px;
-  border:1px solid #eee;
-  border-radius:8px;
-  margin-bottom:10px;
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:18px}
+.brand img{width:34px;height:34px}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a:not(.btn){color:var(--ink);text-decoration:none;font-size:15px;font-weight:500}
+.nav-links a:not(.btn):hover{color:var(--brand-deep)}
+
+/* Hero */
+.hero{padding:56px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:0 0 18px}
+.hero .lead{font-size:19px;color:var(--ink-soft);max-width:34em;margin:0 0 28px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.price-from{font-size:15px;color:var(--ink-soft);margin:0 0 28px}
+.price-from strong{color:var(--ink);font-size:22px}
+.assurances{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15px;color:var(--ink-soft)}
+.assurances li{display:flex;align-items:center;gap:8px}
+.assurances svg{flex:none;color:var(--ok)}
+
+/* The room "ticket": what a customer actually receives */
+.ticket{background:var(--white);border-radius:var(--radius-lg);border:1px solid var(--line);
+  box-shadow:0 30px 60px -30px rgba(19,35,58,.35);overflow:hidden}
+.ticket-top{background:var(--ink);color:#fff;padding:18px 22px;display:flex;justify-content:space-between;align-items:center}
+.ticket-top .plan{font-weight:600}
+.ticket-top .tag{font-size:13px;opacity:.75}
+.ticket-body{padding:22px}
+.status{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;margin-bottom:18px;min-height:24px}
+.status .dot{width:10px;height:10px;border-radius:50%;background:#F5A524;flex:none}
+.status.is-ready .dot{background:var(--ok)}
+.status.is-ready{color:var(--ok)}
+.fields{display:grid;gap:12px;margin:0}
+.field{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:baseline}
+.field dt{font-size:14px;color:var(--ink-soft)}
+.field dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.field .link{overflow-wrap:anywhere}
+.field .link{color:var(--brand-deep)}
+.ticket-bottom{border-top:1px dashed var(--line);padding:14px 22px;font-size:13px;color:var(--ink-soft);display:flex;justify-content:space-between;gap:12px}
+.ticket-bottom span:last-child{white-space:nowrap}
+.reveal{opacity:.25;transition:opacity .5s ease}
+.ticket.is-ready .reveal{opacity:1}
+
+/* Sections */
+section{scroll-margin-top:76px}
+.section{padding:72px 0}
+.section-white{background:var(--white);border-block:1px solid var(--line)}
+.section h2{font-size:clamp(28px,3.4vw,38px);line-height:1.2;letter-spacing:-.01em;font-weight:800;margin:0 0 12px}
+.section .intro{color:var(--ink-soft);max-width:40em;margin:0 0 36px}
+
+/* Steps: a real sequence, so numbered */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:step}
+.steps li{counter-increment:step;position:relative;padding-top:58px}
+.steps li::before{content:counter(step);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;
+  background:var(--brand);color:#fff;font-weight:800;display:grid;place-items:center}
+.steps h3{margin:0 0 6px;font-size:20px}
+.steps p{margin:0;color:var(--ink-soft)}
+
+/* Pricing: rows, capacity first because that's how people choose */
+.prices{display:grid;gap:12px}
+.price-row{display:grid;grid-template-columns:150px 1fr auto auto;gap:24px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.cap{display:flex;align-items:baseline;gap:6px}
+.cap b{font-size:34px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.cap span{color:var(--ink-soft);font-size:15px}
+.row-name{margin:0;font-weight:600}
+.row-name small{display:block;font-weight:400;color:var(--ink-soft);font-size:14px}
+.amount{font-size:24px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.price-note{margin:18px 0 0;font-size:15px;color:var(--ink-soft)}
+
+/* Use cases */
+.uses{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink)}
+.use{padding:22px 22px 6px 0}
+.use + .use{padding-left:22px;border-left:1px solid var(--line)}
+.use h3{margin:0 0 4px;font-size:18px}
+.use .fit{font-weight:600;color:var(--brand-deep);font-size:15px;margin:0 0 8px}
+.use p{margin:0;color:var(--ink-soft);font-size:15px}
+
+/* Reviews */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:0;padding:0;list-style:none}
+.quotes blockquote{margin:0;font-size:20px;font-weight:600;line-height:1.4}
+.quotes figcaption{margin-top:10px;color:var(--ink-soft);font-size:15px}
+.stars{color:#F5A524;letter-spacing:2px;font-size:15px;margin-bottom:8px}
+
+/* FAQ */
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:600;font-size:18px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;margin-top:-9px;
+  border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg);margin-top:-3px}
+.faq details p{margin:0 0 20px;color:var(--ink-soft);max-width:38em}
+
+/* Closing CTA */
+.closing{background:var(--ink);color:#fff;border-radius:var(--radius-lg);padding:48px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.closing h2{color:#fff;margin:0 0 8px}
+.closing p{margin:0;color:#C8D3E3}
+.closing .btn-ghost{color:#fff;border-color:rgba(255,255,255,.35)}
+.closing .btn-ghost:hover{border-color:#fff}
+.closing-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+footer{padding:36px 0 110px;color:var(--ink-soft);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--ink-soft)}
+
+/* Mobile action bar */
+.action-bar{display:none}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .steps{grid-template-columns:1fr;gap:22px}
+  .uses{grid-template-columns:1fr 1fr}
+  .use:nth-child(3){padding-left:0;border-left:0}
+  .use{border-bottom:1px solid var(--line);padding-bottom:18px}
+  .quotes{grid-template-columns:1fr}
+  .closing{grid-template-columns:1fr;padding:32px 24px}
 }
-
-/* FLOATING */
-.floating{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  z-index:999;
+@media (max-width:720px){
+  body{font-size:16px}
+  .nav-links a:not(.btn){display:none}
+  .hero{padding:32px 0 44px}
+  .hero .lead{font-size:17px}
+  .hero-actions .btn{flex:1 1 100%}
+  .ticket-body{padding:18px}
+  .field{grid-template-columns:84px 1fr}
+  .section{padding:52px 0}
+  .price-row{grid-template-columns:auto 1fr;gap:6px 16px;padding:16px}
+  .price-row .amount{grid-column:2;grid-row:1;justify-self:end}
+  .price-row .row-name{grid-column:1 / -1}
+  .price-row .btn{grid-column:1 / -1}
+  .uses{grid-template-columns:1fr}
+  .use,.use + .use{padding-left:0;border-left:0}
+  .action-bar{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
 }
-
-.floating a{
-  display:block;
-  margin-top:10px;
-  background:#0078d4;
-  color:#fff;
-  padding:12px;
-  border-radius:50px;
-  text-decoration:none;
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal,.faq summary::after{transition:none}
 }
 </style>
 </head>
-
 <body>
+<a class="skip" href="#main">Bỏ qua, đến nội dung chính</a>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-inner">
-    <a href="/" class="logo">
-      <img src="./assets/logo.png" alt="Thuê Zoom giá rẻ ThueZoom">
-      ThueZoom.com
-    </a>
-
-    <nav class="nav-menu" id="menu">
-      <a href="#banggia">Bảng giá</a>
-      <a href="#faq">FAQ</a>
-      <a href="#danhgia">Đánh giá</a>
-      <a href="#lienhe">Liên hệ</a>
-      <a href="https://app.onezoom.vn/create" class="cta">Thuê ngay</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="brand"><img src="/assets/logo-68.png" width="34" height="34" alt="">ThueZoom.com</a>
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="#cach-thue">Cách thuê</a>
+      <a href="#bang-gia">Bảng giá</a>
+      <a href="#hoi-dap">Hỏi đáp</a>
+      <a href="https://zalo.me/onezoom" data-cta="header-zalo" rel="noopener">Chat Zalo</a>
+      <a href="https://app.onezoom.vn/create" class="btn btn-primary btn-small" data-cta="header">Thuê ngay</a>
     </nav>
-
-    <div class="menu-toggle" id="toggle">☰</div>
   </div>
 </header>
 
-<!-- HERO -->
+<main id="main">
+
 <section class="hero">
-  <div class="container">
-    <h1>Thuê Zoom OneRoom — Có phòng ngay trong 1 phút</h1>
-    <p>Không cần tài khoản — nhận link ngay sau thanh toán</p>
-    <a class="btn" href="https://app.onezoom.vn/create">Thuê ngay</a>
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Thuê Zoom theo giờ, theo ngày. Có link họp sau 1 phút.</h1>
+      <p class="lead">Phòng họp Zoom cho 100 đến 1000 người, không cần tài khoản Zoom. Chọn gói, thanh toán, hệ thống tự tạo phòng và gửi link cho bạn.</p>
+      <p class="price-from">Chỉ từ <strong>12.000₫</strong> cho 2 giờ, đã gồm VAT</p>
+      <div class="hero-actions">
+        <a href="https://app.onezoom.vn/create" class="btn btn-primary" data-cta="hero">Thuê phòng Zoom ngay</a>
+        <a href="#bang-gia" class="btn btn-ghost">Xem bảng giá</a>
+      </div>
+      <ul class="assurances">
+        <li><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Không cần tài khoản Zoom</li>
+        <li><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Có hóa đơn VAT</li>
+        <li><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Hỗ trợ 24/7 qua Zalo</li>
+      </ul>
+    </div>
+
+    <figure class="ticket" id="ticket" aria-label="Ví dụ thông tin phòng họp bạn nhận được">
+      <div class="ticket-top">
+        <span class="plan">Zoom 300 người · 1 ngày</span>
+        <span class="tag">Ví dụ</span>
+      </div>
+      <div class="ticket-body">
+        <p class="status" id="status" role="status"><span class="dot"></span><span id="status-text">Đang chờ thanh toán…</span></p>
+        <dl class="fields">
+          <div class="field reveal"><dt>Link họp</dt><dd class="link">zoom.us/j/84•••••2715</dd></div>
+          <div class="field reveal"><dt>Meeting ID</dt><dd>84• ••• 2715</dd></div>
+          <div class="field reveal"><dt>Mật khẩu</dt><dd>••••••</dd></div>
+          <div class="field reveal"><dt>Quyền</dt><dd>Chủ phòng (host)</dd></div>
+        </dl>
+      </div>
+      <figcaption class="ticket-bottom"><span>Gửi ngay trên trang đặt phòng</span><span>≈ 1 phút</span></figcaption>
+    </figure>
   </div>
 </section>
 
-<div class="container">
+<section class="section section-white" id="cach-thue">
+  <div class="wrap">
+    <h2>Thuê Zoom trong 3 bước</h2>
+    <p class="intro">Không phải đăng ký, không chờ nhân viên duyệt tay.</p>
+    <ol class="steps">
+      <li><h3>Chọn gói</h3><p>Chọn số người tham gia và thời gian dùng: 2 giờ hoặc 1 ngày.</p></li>
+      <li><h3>Thanh toán</h3><p>Thanh toán trên trang đặt phòng. Giá đã gồm VAT, không phát sinh thêm.</p></li>
+      <li><h3>Nhận link họp</h3><p>Hệ thống tự tạo phòng qua API của Zoom và gửi link, ID, mật khẩu cho bạn.</p></li>
+    </ol>
+  </div>
+</section>
 
-<!-- BẢNG GIÁ -->
-<div class="card" id="banggia">
-  <h2>Bảng giá</h2>
-  <p>Giá đã báo gồm VAT</p>
+<section class="section" id="bang-gia">
+  <div class="wrap">
+    <h2>Bảng giá thuê Zoom</h2>
+    <p class="intro">Chọn gói có sức chứa lớn hơn số người dự kiến một chút để không ai bị chặn ngoài phòng.</p>
+    <div class="prices">
+      <div class="price-row">
+        <div class="cap"><b>100</b><span>người</span></div>
+        <p class="row-name">Thuê theo giờ<small>Dùng trong 2 giờ</small></p>
+        <div class="amount">12.000₫</div>
+        <a href="https://app.onezoom.vn/create" class="btn btn-primary btn-small" data-cta="price-100-2h">Thuê gói này</a>
+      </div>
+      <div class="price-row">
+        <div class="cap"><b>100</b><span>người</span></div>
+        <p class="row-name">Thuê theo ngày<small>Dùng trong 1 ngày</small></p>
+        <div class="amount">39.000₫</div>
+        <a href="https://app.onezoom.vn/create" class="btn btn-primary btn-small" data-cta="price-100-1d">Thuê gói này</a>
+      </div>
+      <div class="price-row">
+        <div class="cap"><b>300</b><span>người</span></div>
+        <p class="row-name">Thuê theo ngày<small>Dùng trong 1 ngày</small></p>
+        <div class="amount">139.000₫</div>
+        <a href="https://app.onezoom.vn/create" class="btn btn-primary btn-small" data-cta="price-300-1d">Thuê gói này</a>
+      </div>
+      <div class="price-row">
+        <div class="cap"><b>500</b><span>người</span></div>
+        <p class="row-name">Thuê theo ngày<small>Dùng trong 1 ngày</small></p>
+        <div class="amount">320.000₫</div>
+        <a href="https://app.onezoom.vn/create" class="btn btn-primary btn-small" data-cta="price-500-1d">Thuê gói này</a>
+      </div>
+      <div class="price-row">
+        <div class="cap"><b>1000</b><span>người</span></div>
+        <p class="row-name">Thuê theo ngày<small>Dùng trong 1 ngày</small></p>
+        <div class="amount">439.000₫</div>
+        <a href="https://app.onezoom.vn/create" class="btn btn-primary btn-small" data-cta="price-1000-1d">Thuê gói này</a>
+      </div>
+    </div>
+    <p class="price-note">Giá đã gồm VAT. Doanh nghiệp cần hóa đơn hoặc thuê nhiều ngày, <a href="https://zalo.me/onezoom" data-cta="price-zalo" rel="noopener">nhắn Zalo để được báo giá</a>.</p>
+  </div>
+</section>
 
-  <div class="price-item"><span>Zoom 100 - 2 giờ</span><span>12.000₫</span></div>
-  <div class="price-item"><span>Zoom 100 - 1 ngày</span><span>39.000₫</span></div>
-  <div class="price-item"><span>Zoom 300 - 1 ngày</span><span>139.000₫</span></div>
-  <div class="price-item"><span>Zoom 500 - 1 ngày</span><span>320.000₫</span></div>
-  <div class="price-item"><span>Zoom 1000 - 1 ngày</span><span>439.000₫</span></div>
+<section class="section section-white" id="chon-goi">
+  <div class="wrap">
+    <h2>Nên thuê Zoom bao nhiêu người?</h2>
+    <p class="intro">Gợi ý theo cách khách hàng của chúng tôi thường dùng.</p>
+    <div class="uses">
+      <div class="use"><h3>Lớp học, họp nhóm</h3><p class="fit">Zoom 100</p><p>Lớp học online, họp phòng ban, phỏng vấn, buổi tư vấn.</p></div>
+      <div class="use"><h3>Đào tạo, hội thảo</h3><p class="fit">Zoom 300</p><p>Đào tạo nội bộ, hội thảo chuyên đề, sinh hoạt câu lạc bộ.</p></div>
+      <div class="use"><h3>Webinar, sự kiện</h3><p class="fit">Zoom 500</p><p>Webinar bán hàng, ra mắt sản phẩm, lễ tổng kết trực tuyến.</p></div>
+      <div class="use"><h3>Đại hội, hội nghị lớn</h3><p class="fit">Zoom 1000</p><p>Đại hội cổ đông, hội nghị toàn hệ thống, sự kiện đông người.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="danh-gia">
+  <div class="wrap">
+    <h2>Khách hàng nói gì</h2>
+    <p class="intro">Từ các trung tâm đào tạo, doanh nghiệp và giảng viên đang thuê Zoom tại đây.</p>
+    <ul class="quotes">
+      <li><figure><div class="stars" aria-label="5 sao">★★★★★</div><blockquote>“Dễ dùng, hỗ trợ nhanh.”</blockquote><figcaption>Trung tâm đào tạo</figcaption></figure></li>
+      <li><figure><div class="stars" aria-label="5 sao">★★★★★</div><blockquote>“Giá rẻ, ổn định.”</blockquote><figcaption>Doanh nghiệp SME</figcaption></figure></li>
+      <li><figure><div class="stars" aria-label="5 sao">★★★★★</div><blockquote>“Có phòng ngay, rất tiện.”</blockquote><figcaption>Giảng viên online</figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-white" id="hoi-dap">
+  <div class="wrap">
+    <h2>Câu hỏi thường gặp khi thuê Zoom</h2>
+    <div class="faq">
+      <details open><summary>Thuê Zoom có cần tài khoản Zoom không?</summary><p>Không cần. Sau khi thanh toán bạn nhận link phòng họp, ID và mật khẩu để dùng ngay.</p></details>
+      <details><summary>Sau khi thanh toán bao lâu thì có phòng?</summary><p>Hệ thống tạo phòng tự động qua API của Zoom, thường có link trong khoảng 1 phút sau khi thanh toán.</p></details>
+      <details><summary>Có hỗ trợ khi đang họp không?</summary><p>Có. Đội kỹ thuật hỗ trợ 24/7 qua Zalo, kể cả trong lúc buổi họp đang diễn ra.</p></details>
+      <details><summary>Thuê Zoom có xuất hóa đơn VAT không?</summary><p>Có. Giá niêm yết đã gồm VAT và có xuất hóa đơn đầy đủ cho doanh nghiệp.</p></details>
+      <details><summary>Có nâng cấp gói giữa chừng được không?</summary><p>Được. Khi số người tham gia tăng, bạn có thể nâng lên gói lớn hơn ngay lập tức.</p></details>
+      <details><summary>Nên thuê Zoom bao nhiêu người?</summary><p>Chọn gói lớn hơn số người dự kiến một chút: lớp học, họp nhóm dùng Zoom 100; đào tạo, hội thảo dùng Zoom 300; webinar dùng Zoom 500; đại hội, hội nghị lớn dùng Zoom 1000.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="lien-he">
+  <div class="wrap">
+    <div class="closing">
+      <div>
+        <h2>Cần phòng họp ngay hôm nay?</h2>
+        <p>Đặt phòng trong 1 phút, hoặc nhắn Zalo nếu bạn cần tư vấn chọn gói.</p>
+      </div>
+      <div class="closing-actions">
+        <a href="https://zalo.me/onezoom" class="btn btn-ghost" data-cta="closing-zalo" rel="noopener">Chat Zalo</a>
+        <a href="https://app.onezoom.vn/create" class="btn btn-primary" data-cta="closing">Thuê phòng Zoom ngay</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> ThueZoom.com – Dịch vụ cho thuê phòng họp Zoom theo giờ, theo ngày.</span>
+    <span>ThueZoom.com là dịch vụ độc lập, không phải Zoom Communications, Inc.</span>
+  </div>
+</footer>
+
+<div class="action-bar">
+  <a href="https://zalo.me/onezoom" class="btn btn-ghost" data-cta="bar-zalo" rel="noopener">Chat Zalo</a>
+  <a href="https://app.onezoom.vn/create" class="btn btn-primary" data-cta="bar">Thuê ngay</a>
 </div>
 
-<!-- FAQ -->
-<div class="card" id="faq">
-  <h2>Câu hỏi thường gặp</h2>
-
-  <p><b>1. Có cần tài khoản Zoom không?</b><br>Không cần, bạn nhận link và dùng ngay.</p>
-  <p><b>2. Sau khi thanh toán bao lâu có phòng?</b><br>Hệ thống api Zoom nhanh chóng có phòng ngay sau khi thanh toán.</p>
-  <p><b>3. Có hỗ trợ khi đang họp không?</b><br>Có, kỹ thuật hỗ trợ 24/7.</p>
-  <p><b>4. Có xuất hóa đơn VAT không?</b><br>Có đầy đủ cho doanh nghiệp.</p>
-  <p><b>5. Có nâng cấp gói giữa chừng được không?</b><br>Có thể nâng cấp ngay lập tức.</p>
-</div>
-
-<!-- ĐÁNH GIÁ -->
-<div class="card" id="danhgia">
-  <h2>Đánh giá khách hàng</h2>
-
-  <p>⭐️⭐️⭐️⭐️⭐️ "Dễ dùng, hỗ trợ nhanh" — Trung tâm đào tạo</p>
-  <p>⭐️⭐️⭐️⭐️⭐️ "Giá rẻ, ổn định" — Doanh nghiệp SME</p>
-  <p>⭐️⭐️⭐️⭐️⭐️ "Có phòng ngay, rất tiện" — Giảng viên online</p>
-</div>
-
-<!-- LIÊN HỆ -->
-<div class="card" id="lienhe">
-  <h2>Liên hệ ngay</h2>
-</div>
-
-</div>
-
-<!-- FLOATING -->
-<div class="floating">
-  <a href="https://zalo.me/onezoom">Chat Zalo</a>
-  <a href="https://app.onezoom.vn/create">Thuê ngay</a>
-</div>
-
-<!-- JS -->
 <script>
-document.addEventListener("DOMContentLoaded", function(){
-  const toggle = document.getElementById("toggle");
-  const menu = document.getElementById("menu");
-
-  toggle.addEventListener("click", function(e){
-    e.stopPropagation();
-    menu.classList.toggle("show");
+(function(){
+  // Tag every outbound CTA so GA4 / the booking app can tell which button converted.
+  window.dataLayer = window.dataLayer || [];
+  document.querySelectorAll('a[data-cta]').forEach(function(a){
+    var place = a.getAttribute('data-cta');
+    try{
+      var url = new URL(a.href);
+      if (url.hostname === 'app.onezoom.vn') {
+        url.searchParams.set('utm_source','thuezoom.com');
+        url.searchParams.set('utm_medium','referral');
+        url.searchParams.set('utm_campaign','landing');
+        url.searchParams.set('utm_content', place);
+        a.href = url.toString();
+      }
+    }catch(e){}
+    a.addEventListener('click', function(){
+      window.dataLayer.push({
+        event: /zalo/.test(place) ? 'click_zalo' : 'click_thue_ngay',
+        cta_position: place
+      });
+    });
   });
 
-  document.addEventListener("click", function(){
-    menu.classList.remove("show");
-  });
-});
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // One orchestrated moment: the sample room "arrives" after payment.
+  var ticket = document.getElementById('ticket');
+  var status = document.getElementById('status');
+  var text = document.getElementById('status-text');
+  function ready(){
+    ticket.classList.add('is-ready');
+    status.classList.add('is-ready');
+    text.textContent = 'Đã tạo phòng – sẵn sàng họp';
+  }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { ready(); return; }
+  setTimeout(function(){ text.textContent = 'Đã nhận thanh toán, đang tạo phòng…'; }, 1100);
+  setTimeout(ready, 2300);
+})();
 </script>
-
 </body>
 </html>
